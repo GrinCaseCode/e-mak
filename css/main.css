@@ -26,7 +26,7 @@ body textarea:required:valid {
 body {
 	font-family: arial, sans-serif;
 	font-size: 16px;
-	line-height: 140%;
+	line-height: 140%; 
 	color: #000;
 	overflow-x: hidden;
 	margin: 0;
@@ -703,4 +703,193 @@ letter-spacing: 0.9px;
 }
 .section_bottom {
 	background-color: #000;
+}
+.billbord-page {
+	padding-top: 137px;
+	min-height: 100vh;
+	text-align: center;
+	background-image: url(../img/billbord_page1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.title-middle {
+	font-size: 32px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 3.2px;
+}
+.title-big {
+	font-size: 64px;
+font-weight: 900;
+line-height: 140%; 
+}
+.about .title-big {
+	margin-bottom: 44px;
+}
+.about .title-section {
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+.about {
+	font-size: 20px;
+	line-height: 180%;
+	margin-top: 36px;
+}
+.about p {
+	max-width: 664px;
+	margin-bottom: 25px;
+}
+.image-section img {
+	max-width: 100%;
+	height: auto;
+}
+.about_main {
+	background: #E5E5E5;
+	position: relative;
+	z-index: 1;
+}
+.about_main::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 30px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	z-index: -1;
+	margin-left: -15px;
+	background-color: #fff;
+}
+.about_revers .row {
+	flex-direction: row-reverse;
+}
+.about_revers .about__image {
+	display: flex;
+	justify-content: flex-end;
+}
+.about_revers .row > div:first-child {
+	padding-left: 123px;
+}
+.list-simple li {
+	padding-left: 15px;
+	position: relative;
+}
+.list-simple li::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "•";
+}
+.portfolio {
+	padding-top: 73px;
+	padding-bottom: 113px;
+}
+.portfolio .title-section {
+	padding-bottom: 34px;
+	font-weight: 700;
+}
+.slider-portfolio .slick-track {
+  display: flex !important;
+}
+.slider-portfolio .slick-slide {
+	padding: 0 15px;
+  height: inherit !important;
+}
+.slider-portfolio {
+	margin: 0 -15px;
+}
+.item-portfolio {
+	min-height: 100%;
+	display: block;
+	width: 100%;
+	background: #E5E5E5;
+	position: relative;
+}
+.item-portfolio__image {
+	height: 702px;
+	display: block;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.item-portfolio__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	transition: all 0.8s;
+}
+.item-portfolio:hover .item-portfolio__image img {
+	transform: scale(1.1);
+}
+.item-portfolio__content {
+	padding: 25px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #E5E5E5;
+	z-index: 2;
+		display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.item-portfolio__descr {
+	font-size: 24px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 2.4px;
+}
+.item-portfolio__title {
+	font-size: 48px;
+font-style: normal;
+font-weight: 900;
+	display: block;
+line-height: 140%;
+color: #000;
+}
+.item-portfolio .btn-main {
+	padding: 0 42px;
+	height: 50px;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	flex: none;
+}
+.slider-portfolio .slick-arrow {
+	border-color: #000;
+	color: #000;
+}
+.slider-portfolio .slick-arrow:hover {
+	background-color: #000;
+	color: #fff;
+}
+.slider-portfolio .slick-prev {
+	left: -60px;
+}
+.slider-portfolio .slick-next {
+	right: -60px;
+}
+.slick-dots {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+}
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+.slick-dots li button:hover,
+.slick-dots li.slick-active button {
+background-color: #0068B3;
 }
